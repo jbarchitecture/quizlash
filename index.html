@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-lash!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="body">
+    <div class="scoreDisplay">
+        <img src="thumbtack.png" class="tack-pic">
+        <h1 class="header">Quiz-lash!</h1>
+        <img src="thumbtack.png" class="tack-pic">
+        <div class="getStarted">
+            <p id="blurb">
+                Flex your detective skills with these tricky mystery riddles!
+            </p>
+            <button class="getStartedBtn">Get Started!</button>
+        </div>
+    </div>
+    <div class="scoreContainer">
+        <p class="scoreText">Score: <span class="score">0</span></p>
+    </div>
+    <div class="container">
+        <div id="containerWrapper">
+            <div class="container" id="card1">
+                <div class="card">
+                    <div class="cardBack">
+                        <div class="answer">
+                            <h2>How does the killer manage to get the safe pill every time?</h2>
+                            <div class="choices">
+                                <button class="quesbutton">He's very lucky</button>
+                                <button class="quesbutton">He built up a tolerance</button>
+                                <button class="quesbutton correct">The poison is in the water</button>
+                                <div class="correctBlurb">
+                                    <h2 class="correctStyle">CORRECT!</h2>
+                                </div>
+                                <p class="explanation">
+                                    Every victim died after taking the pill WITH water...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="cardFront">
+                        <h2>The Parched Killer</h2>
+                        <p class="riddle">A criminal kidnaps people and demands them to take one of the two pills that he offers. The pills look identical, but the killer claims that only one is poisonous. When a victim chooses a pill, the killer takes the remaining one. The victims always die after swallowing the tablet with water.</p>
+                        <div class="choices">
+                            <button class="flipButton">Flip Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container" id="card2">
+                <div class="card">
+                    <div class="cardBack">
+                        <div class="answer">
+                            <h2>Who is responsible for his death?</h2>
+                            <div class="choices">
+                                <button class="quesbutton correct">His Colleague, Nicolas</button>
+                                <button class="quesbutton">His Sister, Lanaya</button>
+                                <button class="quesbutton">His Wife,Teresa</button>
+                                <div class="correctBlurb">
+                                    <h2 class="correctStyle">CORRECT!</h2>
+                                </div>
+                                <p class="explanation">
+                                    The chemist wrote out the elements Ni, C, O, La, and S...
+                                </p>
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="cardFront">
+                        <h2>Volatile Chemicals</h2>
+                        <p class="riddle">A renowned chemist is found dead in his lab. There is no clear evidence except a piece of paper lying by the body. The paper is blank other than the name of five elements scrawled across it hastily:</p>
+                        <p class="riddle" id="bold">
+                            Nickel, Carbon, Oxygen, Lanthanum, Sulfur
+                        </p>
+                        <p class="riddle">Three people visited the chemist that day – his sister, <b>Lanaya</b>, his colleague, <b>Nicolas</b>, and his wife, <b>Teresa</b>.</p>
+                        <div class="choices">
+                            <button class="flipButton">Flip Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="card3">
+                <div class="card">
+                    <div class="cardBack">
+                        <div class="answer">
+                            <h2>Why was Marissa the only one to die?</h2>
+                            <div class="choices">
+                                <button class="quesbutton">Only one drink was poisoned</button>
+                                <button class="quesbutton correct">The poison was in the ice</button>
+                                <button class="quesbutton">Juliana is immune</button>
+                                <div class="correctBlurb">
+                                    <h2 class="correctStyle">CORRECT!</h2>
+                                </div>
+                                <p class="explanation">
+                                    Marissa let her ice melt...
+                                </p>
+                                
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="cardFront">
+                        <h2>Drinks to DIE For</h2>
+                        <p class="riddle">Marissa and Juliana went out for drinks together. They ordered the same drink. Juliana was really thirsty and finished five in the time it took Marissa to finish one. It is suspected that the drinks must have been poisoned, but only Marissa died.</p>
+                        <div class="choices">
+                            <button class="flipButton">Flip Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
