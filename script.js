@@ -66,7 +66,7 @@ for (let button of letsStart) {
 }
 
 for (let i = 0; i < cardsWrapper.length; i++) {
-    let flipbutton = cardsWrapper[i].querySelector(".flipButton");
+    let flipbutton = cardsWrapper[i].querySelectorAll(".flipButton");
     flipbutton.onclick = function check() {
         
         front[i].classList.toggle('flipped');
