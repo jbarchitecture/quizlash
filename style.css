@@ -42,6 +42,7 @@ button:hover {
 .riddle {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14pt;
+    font-weight: bold;
     text-align: justify;
     color:black;
 }
