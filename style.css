@@ -7,10 +7,22 @@ body {
     align-items: center;*/
 }
 
+.filler {
+    margin-top: 50px;
+}
+
 button {
     border: solid 2px;
     padding: 0.5rem;
     border-radius: 0.25rem;
+    font-weight: 700;
+}
+
+.finishButton {
+    border: solid 2px;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    font-size: 24pt;
     font-weight: 700;
 }
 
@@ -25,6 +37,36 @@ button:hover {
     padding-top: 30px;
     margin-bottom: -40px;
     z-index: 4000;
+}
+
+.gradePic {
+    transform: rotate(-5deg);
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0 0 25px white;
+}
+
+.letterGrade {
+    margin-top: -100px;
+    margin-left: 375px;
+    transform: rotate(-5deg);
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.gradeText {
+    transform: rotate(5deg);
+    background-color: rgb(241, 231, 231);
+    width: fit-content;
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 8px -2px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    margin-top: 0;
 }
 
 .getStartedBtn {
@@ -82,7 +124,7 @@ button:hover {
     text-align: center;
     position: fixed;
     padding: 20px;
-    background-image: url("corkboard.png");
+    /*background-image: url("corkboard.png");*/
     width: 100%;
     /*box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);*/
     margin-bottom: 30px;
@@ -90,12 +132,12 @@ button:hover {
 }
 
 .containerWrapper {
-    border-radius: 20px;
     display: none;
     flex-direction: column;
 }
 
-.container {
+.container,
+.grade {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -103,10 +145,14 @@ button:hover {
     margin: auto;
 }
 
+.grade {
+    display: none;
+}
+
 .card {
     align-items: center;
     margin-top: 1rem;
-    min-height: 350px;
+    min-height: 400px;
     width: 70%;
     position: relative;
     border-radius: 0.25rem;
@@ -130,7 +176,26 @@ button:hover {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+#card1Front,
+#card1Back {
     background-image: url("flashcard.png");
+}
+
+#card2Front,
+#card2Back {
+    background-image: url("flashcard-2.png");
+}
+
+#card3Front,
+#card3Back {
+    background-image: url("flashcard-3.png");
+}
+
+#card4Front,
+#card4Back {
+    background-image: url("flashcard-2.png");
 }
 
 .cardBack {
@@ -159,18 +224,20 @@ button:hover {
 }
 
 .scoreContainer {
-    border-radius: 0.5rem;
-    padding: .5rem;
-    background-color: rgb(241, 231, 231);
-    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 8px -2px rgba(0, 0, 0, 0.06);
+    width: 10%;
     position: fixed;
     display: none;
-    margin: 25px;
+    margin: 20px;
 }
 
 .scoreText {
+    border-radius: 0.5rem;
+    padding: .5rem;
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2), 0 4px 8px -2px rgba(0, 0, 0, 0.1);
+    background-color: rgb(241, 231, 231);
+    text-align: center;
     margin: 0;
-    font-size: 24pt;
+    font-size: 30pt;
 }
 
 h4 {

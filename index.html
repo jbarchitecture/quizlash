@@ -20,13 +20,14 @@
         </div>
     </div>
     <div class="scoreContainer">
+        <img src="thumbtack.png" class="tack-pic">
         <p class="scoreText">Score: <span class="score">0</span></p>
     </div>
     <div class="container">
         <div id="containerWrapper">
             <div class="container" id="card1">
                 <div class="card">
-                    <div class="cardBack">
+                    <div class="cardBack" id="card1Back">
                         <div class="answer">
                             <h2>How does the killer manage to get the safe pill every time?</h2>
                             <div class="choices">
@@ -46,7 +47,7 @@
                         </div>
                     </div>
         
-                    <div class="cardFront">
+                    <div class="cardFront" id="card1Front">
                         <h2>The Parched Killer</h2>
                         <p class="riddle">A criminal kidnaps people and demands them to take one of the two pills that he offers. The pills look identical, but the killer claims that only one is poisonous. When a victim chooses a pill, the killer takes the remaining one. The victims always die after swallowing the tablet with water.</p>
                         <div class="choices">
@@ -58,7 +59,7 @@
         
             <div class="container" id="card2">
                 <div class="card">
-                    <div class="cardBack">
+                    <div class="cardBack" id="card2Back">
                         <div class="answer">
                             <h2>Who is responsible for his death?</h2>
                             <div class="choices">
@@ -78,7 +79,7 @@
                         </div> 
                     </div>
                     
-                    <div class="cardFront">
+                    <div class="cardFront" id="card2Front">
                         <h2>Volatile Chemicals</h2>
                         <p class="riddle">A renowned chemist is found dead in his lab. There is no clear evidence except a piece of paper lying by the body. The paper is blank other than the name of five elements scrawled across it hastily:</p>
                         <p class="riddle" id="bold">
@@ -94,7 +95,7 @@
 
             <div class="container" id="card3">
                 <div class="card">
-                    <div class="cardBack">
+                    <div class="cardBack" id="card3Back">
                         <div class="answer">
                             <h2>Why was Marissa the only one to die?</h2>
                             <div class="choices">
@@ -115,7 +116,7 @@
                         </div> 
                     </div>
                     
-                    <div class="cardFront">
+                    <div class="cardFront" id="card3Front">
                         <h2>Drinks to DIE For</h2>
                         <p class="riddle">Marissa and Juliana went out for drinks together. They ordered the same drink. Juliana was really thirsty and finished five in the time it took Marissa to finish one. It is suspected that the drinks must have been poisoned, but only Marissa died.</p>
                         <div class="choices">
@@ -125,9 +126,9 @@
                 </div>
             </div>
 
-            <div class="container" id="card4">
+            <div class="container">
                 <div class="card">
-                    <div class="cardBack">
+                    <div class="cardBack" id="card4Back">
                         <div class="answer">
                             <h2>Who killed the science teacher?</h2>
                             <div class="choices">
@@ -148,7 +149,7 @@
                         </div> 
                     </div>
                     
-                    <div class="cardFront">
+                    <div class="cardFront" id="card4Front">
                         <h2>Talk About a Rough Start</h2>
                         <p class="riddle">The science teacher at Jefferson High School is murdered on the first day of the academic year. The police narrow down the suspects to four members of the school – the gardener, the coach, the math teacher, and the principal. However, they all have alibis:</p>
                         <p class="riddle">The gardener says he was trimming the bushes</p>
@@ -159,7 +160,52 @@
                         </div>
                     </div>
                 </div>
+                <div class="filler">
+                    <button class="finishButton">FINISH</button>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="grade" id="grade-A">
+        <img src="thumbtack.png" class="tack-pic">
+        <img src="dick-tracy.png" class="gradePic">
+        <img src="grade-result-A-plus.png" class="letterGrade">
+        <img src="thumbtack.png" class="tack-pic">
+        <div class="gradeText">
+            <p>
+                Great job! You're a regular Dick Tracy!
+            </p>
+        </div>  
+        <div>
+            <button class="resetButton">Try Again?</button>
+        </div>
+    </div>
+    <div class="grade" id="grade-B">
+        <img src="thumbtack.png" class="tack-pic">
+        <img src="pink-panther.jpg" class="gradePic">
+        <img src="grade-result-B.png" class="letterGrade">
+        <img src="thumbtack.png" class="tack-pic">
+        <div class="gradeText">
+            <p>
+                You didn't do amazing, but dang it you get results!
+            </p>
+        </div>  
+        <div>
+            <button class="resetButton">Try Again?</button>
+        </div>
+    </div>
+    <div class="grade" id="grade-C">
+        <img src="thumbtack.png" class="tack-pic">
+        <img src="detective-baby.jpg" class="gradePic">
+        <img src="grade-result-C.png" class="letterGrade">
+        <img src="thumbtack.png" class="tack-pic">
+        <div class="gradeText">
+            <p>
+                Well...I guess there's always next time! Try again soon!
+            </p>
+        </div>  
+        <div>
+            <button class="resetButton">Try Again?</button>
         </div>
     </div>
 </body>
